@@ -1,0 +1,15 @@
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\bin\Debug\net7.0\Smells.exe
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\bin\Debug\net7.0\Smells.deps.json
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\bin\Debug\net7.0\Smells.runtimeconfig.json
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\bin\Debug\net7.0\Smells.dll
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\bin\Debug\net7.0\Smells.pdb
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.csproj.AssemblyReference.cache
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.GeneratedMSBuildEditorConfig.editorconfig
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.AssemblyInfoInputs.cache
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.AssemblyInfo.cs
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.csproj.CoreCompileInputs.cache
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.dll
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\refint\Smells.dll
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.pdb
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\Smells.genruntimeconfig.cache
+D:\Skola\IT högskolan\Clean code\Labb\Smells\Smells\obj\Debug\net7.0\ref\Smells.dll
