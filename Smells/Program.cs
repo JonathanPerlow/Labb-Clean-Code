@@ -1,59 +1,27 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
+﻿using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
 using Smells;
 
-namespace MooGame
+namespace MooGame;
+
+class Program
 {
-    class MainClass
+
+    public static void Main(string[] args)
     {
-
-        public static void Main(string[] args)
-        {
-
-            bool playOn = true;
-            Console.WriteLine("Enter your user name:\n");
-            string name = Console.ReadLine();
-            var game = new GameLogic();
-            var result = new Result();
-
-            while (playOn)
+        //Dependency injection
+        var host = Host.CreateDefaultBuilder()
+            .ConfigureServices((context,services) =>
             {
-                string goal = game.makeGoal();
+                services.AddTransient<IGameLogic,GameLogic>();
+                services.AddTransient<IResult, Result>();
+                services.AddTransient<IUserInterface, UserInterface>();
+                services.AddTransient<IGameController, GameController>();
+            })
+            .Build();
 
-
-                Console.WriteLine("New game:\n");
-                //comment out or remove next line to play real games!
-                Console.WriteLine("For practice, number is: " + goal + "\n");
-                string guess = Console.ReadLine();
-                int nGuess = 1;
-                string bbcc = game.checkBC(goal, guess);
-                Console.WriteLine(bbcc + "\n");
-                while (bbcc != "BBBB,")
-                {
-                    nGuess++;
-                    guess = Console.ReadLine();
-                    Console.WriteLine(guess + "\n");
-                    bbcc = game.checkBC(goal, guess);
-                    Console.WriteLine(bbcc + "\n");
-                }
-                StreamWriter output = new StreamWriter("result.txt", append: true);
-                output.WriteLine(name + "#&#" + nGuess);
-                output.Close();
-                result.Show();
-                Console.WriteLine("Correct, it took " + nGuess + " guesses\nContinue?");
-                string answer = Console.ReadLine();
-                if (answer != null && answer != "" && answer.Substring(0, 1) == "n")
-                {
-                    playOn = false;
-                }
-            }
-        }
- 
-
-
-
+        //Creates a GameController instance
+        var svc = ActivatorUtilities.CreateInstance<GameController>(host.Services);
+        svc.Run();
     }
-
-
 }

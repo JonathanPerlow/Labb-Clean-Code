@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Smells", "Smells\Smells.csproj", "{87BAD640-5224-4811-B12C-8183B84D7BCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Smells", "Smells\Smells.csproj", "{87BAD640-5224-4811-B12C-8183B84D7BCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSmell", "TestSmell\TestSmell.csproj", "{0DBAAB78-E14A-4B1D-ABC6-11134F27FFB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{87BAD640-5224-4811-B12C-8183B84D7BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87BAD640-5224-4811-B12C-8183B84D7BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87BAD640-5224-4811-B12C-8183B84D7BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBAAB78-E14A-4B1D-ABC6-11134F27FFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBAAB78-E14A-4B1D-ABC6-11134F27FFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBAAB78-E14A-4B1D-ABC6-11134F27FFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBAAB78-E14A-4B1D-ABC6-11134F27FFB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
